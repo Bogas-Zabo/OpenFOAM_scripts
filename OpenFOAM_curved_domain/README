@@ -1,0 +1,3 @@
+This program easily creates curved domains to simulate corners in OpenFOAM. User can edit parameters as corner radius, number of subdivisions, origin location and the car's length (to change the rest of domain size accordingly).
+
+The output is a ready to use "blockMeshDict" file that can be copied to the main case in the "\system\" folder.

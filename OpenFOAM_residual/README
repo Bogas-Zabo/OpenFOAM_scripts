@@ -1,0 +1,5 @@
+Script to plot the residuals along the iterations from the OpenFOAM simulation.
+
+Get the "log" file after executing "simpleFoam > log" (command may vary depending of the extra option used).
+
+Copy your "log" file from your OpenFOAM case folder in and paste it into this "OpenFOAM_residual\" folder.

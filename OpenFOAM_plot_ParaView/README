@@ -1,0 +1,22 @@
+Scripts that communicate with ParaView and execute commands to plot the downforce distribution.
+Change "foam_reader.MeshRegions" to select the important components from your case "group/", and edit "calc.Function" to change the formula for the computed force.
+
+The program also compares the integrated curve value to the actual integrated force along the model surface (computes the error).
+
+After execution the program also saves two files, "accumulated_lift_data.txt" and "distribution_lift_data.txt" for future post-processing. 
+
+"downforce_plot.py" is to plot distribution and accumulation forces along the component's length, and "downforce_plot_2.py" is to plot along it's width (with symmetry plane).
+
+Put the python scripts in the same folder as the main OpenFOAM case, and run (in this case for ParaView version 5.13.1):
+
+In Ubuntu:
+
+/mnt/c/<path_to_your_ParaView>/ParaView\ 5.13.1/bin/pvpython.exe downforce_plot.py
+or 
+/mnt/c/<path_to_your_ParaView>/ParaView\ 5.13.1/bin/pvpython.exe downforce_plot_2.py
+
+In CMD:
+
+& "C:\<path_to_your_ParaView>\ParaView 5.13.1\bin\pvpython.exe" downforce_plot.py 
+or 
+& "C:\<path_to_your_ParaView>\ParaView 5.13.1\bin\pvpython.exe" downforce_plot_2.py 

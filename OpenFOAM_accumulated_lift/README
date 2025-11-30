@@ -1,0 +1,15 @@
+This program is used to combine multiple plots for "accumulated_lift_data.txt" obtained from OpenFOAM iterations of the same component.
+
+The "accumulated_lift_data.txt" file can be obtained from "downforce_plot.py" and "downforce_plot_2.py" (OpenFOAM_plot_ParaView repo).
+
+Ensure that all the "accumulated_lift_data.txt" are renamed previously to have a number at the start, like "1_accumulated_lift_data.txt".
+
+Example of the main folder:
+
+1_accumulated_lift_data.txt   --> 1st iteration
+2_accumulated_lift_data.txt   --> 2nd iteration
+3_accumulated_lift_data.txt   --> 3rd iteration
+4_accumulated_lift_data.txt   --> 4th iteration
+...                           --> and so on
+accumulated_lift.py           --> main program
+README.txt
